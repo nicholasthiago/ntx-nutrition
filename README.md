@@ -16,8 +16,8 @@ Just select one of the items in the list, and you will be redirected to the item
 
 NextJS, TypeScript, GraphQL, Apollo and Bootstrap ( being implemented )
 
-## Contact
+## Contact | Pages | Links
 
-[LinkedIN](	 https://linkedin.com/in/nicholasthiago )
-[Github]( 	 https://github.com/nicholasthiago		)
-[Portfolio]( https://nicholasthiago.github.io		)
+[ LinkedIn	]( https://linkedin.com/in/nicholasthiago	)
+[ Github	]( https://github.com/nicholasthiago		)
+[ Portfolio	]( https://nicholasthiago.github.io			)
