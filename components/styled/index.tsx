@@ -61,8 +61,12 @@ export const Badge = styled.span`
 `;
 
 export const List = styled( Col )`
-	width: 32%;
+	width: 32vw;
 	align-items: flex-start;
+
+	@media ( width < 768px ) {
+		width: 80vw;
+	}
 
 	a {
 		font-size: 0.9rem;
