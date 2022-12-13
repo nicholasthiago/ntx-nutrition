@@ -1,6 +1,9 @@
+import Link from 'next/link'
 import queryGraphql from '../shared/query-graphql'
 
 import { Nutrients } from '../components/nutrients/nutrients.component'
+import { Button, Col, Row, Title } from '../components/styled'
+import Menu from '../components/menu/menu.component'
 
 
 export default function UserProfile({ item }) {
@@ -9,23 +12,26 @@ export default function UserProfile({ item }) {
 	}
 
 	return (
-		<div key={ item.id }>
+		<Col key={ item.id } style={{ paddingBottom:'16rem' }}>
 
-			<h1>
+			<Link href={'/'}>
+				<Button> {'Home'} </Button>
+			</Link>
+
+			<Title>
 				{ item.name }
-			</h1>
+			</Title>
 
 			<Nutrients nutrients={ item.nutrition } />
-
-		</div>
+		</Col>
 	)
 }
 
 
 export async function getStaticProps( context ) {
 	const { params } = context
-	const { name } = params
-	const { item = null } = await queryGraphql(`
+	const { name }	 = params
+	const { item	 = null 	} = await queryGraphql(`
 		query( $name: String ) {
 			item( name: $name ) {
 				id
