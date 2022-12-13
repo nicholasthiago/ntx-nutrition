@@ -1,4 +1,4 @@
-# Summary abou the application
+# Summary about the application
 
 This simple application was the base for me to develop my skills with NextJS and GraphQL, I'll be soon adding some database, as MongoDB.
 
